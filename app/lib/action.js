@@ -30,8 +30,14 @@ export const sendEmail = async (currentState, formData) => {
     });
 
     console.log("이메일 전송 성공");
-    return { message: "이메일 전송 성공" };
+    formData.delete("name");
+    formData.delete("email");
+    formData.delete("subject");
+    return {
+      message: "이메일 전송 성공",
+    };
   } catch (error) {
     console.error(error);
+    alert("메일 전송이 실패했습니다. 잠시 후 다시 시도해주세요!");
   }
 };

@@ -129,6 +129,53 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 80rem;
+  margin: 0 auto;
+}
+.coverArea > .experienceWrap .careerWrap {
+  text-align: left;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.75) 100%
+    ),
+    linear-gradient(
+      90deg,
+      #c0eed3 0%,
+      #b6c8ef 32.6%,
+      #fcd1cb 65.98%,
+      #f0b1de 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 10px 20px #1e1f241a;
+  border-radius: 2rem;
+  padding: 2px;
+  box-shadow: 0 10px 20px #1e1f241a;
+}
+.coverArea > .experienceWrap .careerWrap > div {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem 4rem;
+  border-radius: 2rem;
+}
+.coverArea > .experienceWrap .careerWrap div > div {
+  width: 20rem;
+}
+.coverArea > .experienceWrap .careerWrap:last-of-type div > div {
+  width: 100%;
+}
+.coverArea > .experienceWrap .careerWrap div li a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.coverArea > .experienceWrap .careerWrap h4 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 .coverArea > .skillsWrap ul {
   display: flex;
