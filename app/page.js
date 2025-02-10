@@ -1,13 +1,28 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import styles from "./page.module.css";
+
 import Image from "next/image";
 import Kdy from "@/public/images/442aa9949.png";
+import html from "@/public/icons/html5.png";
+import css from "@/public/icons/css3.png";
+import js from "@/public/icons/javascript.png";
+import jq from "@/public/icons/jquery.png";
+import reactIcon from "@/public/icons/react.png";
+import nextIcon from "@/public/icons/nextdotjs.png";
+import swiperIcon from "@/public/icons/swiper.png";
+import lottieIcon from "@/public/icons/lottiefiles.png";
+import axiosIcon from "@/public/icons/axios.png";
+import figmaIcon from "@/public/icons/figma.png";
+import gitIcon from "@/public/icons/git.png";
+import slackIcon from "@/public/icons/slack.png";
+
 import lottieJson from "@/public/animation/scroll.json";
 import emailJson from "@/public/animation/mail.json";
-import dynamic from "next/dynamic";
-import EmailSend from "./components/EmailSend";
 import stars from "@/public/animation/stars.json";
+
+import EmailSend from "./components/EmailSend";
 
 export default function Home() {
   const Lottie = dynamic(() => import("@/app/components/LottieComponent"), {
@@ -64,7 +79,7 @@ export default function Home() {
                 <li>💙 연희직업전문학교 웹디자인/웹퍼블리셔 과정 수료</li>
                 <li>💜 ESTJ</li>
                 <li>
-                  🤎{" "}
+                  🤎
                   <a href="https://github.com/10dy10" target="__blank">
                     GitHub
                   </a>
@@ -77,19 +92,54 @@ export default function Home() {
           <h3>SKILLS</h3>
           <p>이런 기술들을 사용해봤습니다!</p>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Jquery</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Swiper</li>
-            <li>Lottie</li>
-            <li>Axios</li>
-            <li>Figma</li>
-            <li>AdobeXD</li>
-            <li>Slack</li>
-            <li>Git</li>
+            <li>
+              <Image src={html} alt="이미지" />
+              <p>HTML</p>
+            </li>
+            <li>
+              <Image src={css} alt="이미지" />
+              <p>CSS</p>
+            </li>
+            <li>
+              <Image src={js} alt="이미지" />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <Image src={jq} alt="이미지" />
+              <p>Jquery</p>
+            </li>
+            <li>
+              <Image src={reactIcon} alt="이미지" />
+              <p>React</p>
+            </li>
+            <li>
+              <Image src={nextIcon} alt="이미지" />
+              <p>Next.js</p>
+            </li>
+            <li>
+              <Image src={swiperIcon} alt="이미지" />
+              <p>Swiper</p>
+            </li>
+            <li>
+              <Image src={lottieIcon} alt="이미지" />
+              <p>Lottie</p>
+            </li>
+            <li>
+              <Image src={axiosIcon} alt="이미지" />
+              <p>Axios</p>
+            </li>
+            <li>
+              <Image src={figmaIcon} alt="이미지" />
+              <p>Figma</p>
+            </li>
+            <li>
+              <Image src={slackIcon} alt="이미지" />
+              <p>Slack</p>
+            </li>
+            <li>
+              <Image src={gitIcon} alt="이미지" />
+              <p>Git</p>
+            </li>
           </ul>
         </div>
         <div className={styles.experienceWrap}>
