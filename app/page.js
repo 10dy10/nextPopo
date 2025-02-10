@@ -4,15 +4,20 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Kdy from "@/public/images/442aa9949.png";
 import lottieJson from "@/public/animation/scroll.json";
+import emailJson from "@/public/animation/mail.json";
 import dynamic from "next/dynamic";
+import EmailSend from "./components/EmailSend";
+import stars from "@/public/animation/stars.json";
 
 export default function Home() {
   const Lottie = dynamic(() => import("@/app/components/LottieComponent"), {
     ssr: false,
   });
+
   return (
     <div className={styles.page}>
       <div className={styles.fixedArea}>
+        <Lottie animationData={stars} />
         <p className={styles.textBox}>
           안녕하세요!
           <br />
@@ -45,24 +50,28 @@ export default function Home() {
             지속적인 배움과 성장 속에서 발전하는 프론트엔드 개발자가 되기 위해
             학습하고 있습니다.
           </div>
-          <ul>
-            <li className="aboutTxt">
-              <ul>
-                <li>김다영</li>
-                <li>1993.10.10</li>
-                <li>인천대학교 일어일문학과</li>
-                <li>연희직업전문학교 웹디자인/웹퍼블리셔 과정 수료</li>
-                <li>ESTJ</li>
-              </ul>
-            </li>
+          <ul className={styles.aboutBox}>
             <li className={styles.imgBox}>
               <Image src={Kdy} alt="이미지" />
+            </li>
+            <li className={styles.aboutTxt}>
+              <ul>
+                <li>김다영</li>
+                <li>🧡 1993.10.10</li>
+                <li>💛 kdy93102@naver.com</li>
+                <li>💚 인천대학교 일어일문학과</li>
+                <li>💙 연희직업전문학교 웹디자인/웹퍼블리셔 과정 수료</li>
+                <li>💜 ESTJ</li>
+                <li>
+                  🤎 <a href="https://github.com/10dy10">GitHub</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
         <div className={styles.skillsWrap}>
           <h3>SKILLS</h3>
-          <p>이런 기술들을 사용해봤습니다</p>
+          <p>이런 기술들을 사용해봤습니다!</p>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -98,6 +107,7 @@ export default function Home() {
                 <li>-REST API연동하여 보험 목록 호출 개발</li>
                 <li>-웰그램 자사 홈페이지 유지보수</li>
                 <li>-웰그램 자사 홈페이지 레거시 코드 React로 리팩토링</li>
+                <li>-디자인시스템 적용</li>
               </ul>
             </li>
             <li>
@@ -105,10 +115,15 @@ export default function Home() {
               <p>퍼블리셔</p>
               <p>22.10 ~ 23.01</p>
               <ul>
-                <li>-펫글 팝업 창 반응형 퍼블리싱</li>
-                <li>-이한건설 서브페이지 반응형 퍼블리싱</li>
-                <li>-대한환경공학회 웹 리뉴얼 반응형 퍼블리싱</li>
-                <li>-우리아이치과 웹 퍼블리싱</li>
+                <li>-펫글 팝업 창 반응형 퍼블리싱(퍼블리싱 참여도 100%)</li>
+                <li>
+                  -이한건설 서브페이지 반응형 퍼블리싱(퍼블리싱 참여도 100%)
+                </li>
+                <li>
+                  -대한환경공학회 웹 리뉴얼 반응형 퍼블리싱(퍼블리싱 참여도
+                  100%)
+                </li>
+                <li>-우리아이치과 웹 퍼블리싱(퍼블리싱 참여도 100%)</li>
               </ul>
             </li>
             <li>
@@ -116,10 +131,18 @@ export default function Home() {
               <p>퍼블리셔</p>
               <p>21.12 ~ 22.12</p>
               <ul>
-                <li>-삼일시스템 웹 리뉴얼 반응형 퍼블리싱</li>
-                <li>-플러스페이 웹 리뉴얼 반응형 퍼블리싱</li>
-                <li>-스낵마루 웹 서브페이지 반응형 퍼블리싱</li>
-                <li>-벤허리서치 웹 구축 반응형 퍼블리싱</li>
+                <li>
+                  -삼일시스템 웹 리뉴얼 반응형 퍼블리싱(퍼블리싱 참여도 100%)
+                </li>
+                <li>
+                  -플러스페이 웹 리뉴얼 반응형 퍼블리싱(퍼블리싱 참여도 100%)
+                </li>
+                <li>
+                  -스낵마루 웹 서브페이지 반응형 퍼블리싱(퍼블리싱 참여도 100%)
+                </li>
+                <li>
+                  -벤허리서치 웹 구축 반응형 퍼블리싱(퍼블리싱 참여도 100%)
+                </li>
               </ul>
             </li>
             <li>
@@ -137,6 +160,15 @@ export default function Home() {
               <p>13.06 ~ 21.05</p>
             </li>
           </ul>
+        </div>
+        <div className={styles.emailWrap}>
+          <p>
+            감사합니다!
+            <br />
+            궁금한 점이 있다면 연락주세요
+          </p>
+          <Lottie animationData={emailJson} />
+          <EmailSend />
         </div>
         <footer>
           <p className="txtBox">

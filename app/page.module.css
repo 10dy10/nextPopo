@@ -1,5 +1,6 @@
 .page > div {
   box-shadow: 0px 2px 12px 0px #0000001a;
+  text-align: center;
 }
 .fixedArea {
   background-color: #fff;
@@ -24,6 +25,12 @@
   background-size: contain;
   pointer-events: none;
   z-index: -1;
+}
+.fixedArea > div:not(.lottieWrap) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .fixedArea .lottieWrap {
   width: 10rem;
@@ -75,21 +82,76 @@
 .coverArea > div {
   max-width: 140rem;
   margin: 0 auto;
-  padding-top: 8rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid #0000001a;
+}
+.coverArea > div:last-of-type {
+  border-bottom: 0;
 }
 .coverArea > div h3 {
   margin-bottom: 4rem;
   font-family: "Gabarito", serif;
   font-size: 5rem;
   font-weight: 800;
+  text-align: center;
+}
+.coverArea > div h3 + p {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.coverArea > .experienceWrap h3,
+.coverArea > .skillsWrap h3 {
+  margin-bottom: 1rem;
 }
 .aboutWrap .aboutMe {
   margin-bottom: 6rem;
   font-size: 1.6rem;
   line-height: 1.6;
+  text-align: center;
+}
+.aboutWrap .aboutBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.aboutWrap .aboutBox .aboutTxt ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.6rem;
 }
 .imgBox {
   width: 20rem;
+}
+.coverArea > .experienceWrap > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.coverArea > .skillsWrap ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.coverArea > .skillsWrap ul li {
+  width: calc((100% - 6rem) / 3);
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Russo One", serif;
+  font-size: 3.5rem;
+}
+.coverArea .emailWrap > p {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.coverArea .emailWrap > div {
+  width: 25rem;
+  margin: 4rem auto 0;
 }
 
 @keyframes rotation {
