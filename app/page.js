@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.coverArea}>
+      <div className={styles.coverArea} id="aboutM">
         <div className={styles.aboutWrap}>
           <h3>ABOUT ME</h3>
           <div className={styles.aboutMe}>
@@ -88,7 +88,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className={styles.skillsWrap}>
+        <div className={styles.skillsWrap} id="skillW">
           <h3>SKILLS</h3>
           <p>이런 기술들을 사용해봤습니다!</p>
           <ul>
@@ -142,7 +142,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className={styles.experienceWrap}>
+        <div className={styles.experienceWrap} id="experienceW">
           <h3>EXPERIENCE</h3>
           <p>CAREER & EDUCATIONS & ACTIVITY</p>
           <ul>
@@ -248,7 +248,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className={styles.emailWrap}>
+        <div className={styles.emailWrap} id="contact">
           <p>
             감사합니다!
             <br />

@@ -14,18 +14,23 @@ export default function Header() {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/#aboutM">
             <button>ABOUT</button>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/#skillW">
             <button>SKILLS</button>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/#experienceW">
             <button>EXPERIENCE</button>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#contact">
+            <button>CONTACT</button>
           </Link>
         </li>
       </ul>
