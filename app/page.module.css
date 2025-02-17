@@ -172,6 +172,13 @@
   display: inline-block;
   margin-top: 1rem;
   margin-right: 1rem;
+  color: #000;
+}
+.coverArea > .experienceWrap .careerWrap div li span {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #1b1a1a;
 }
 .coverArea > .experienceWrap .careerWrap h4 {
   font-size: 2rem;
