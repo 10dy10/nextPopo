@@ -17,6 +17,8 @@ import axiosIcon from "@/public/icons/axios.png";
 import figmaIcon from "@/public/icons/figma.png";
 import gitIcon from "@/public/icons/git.png";
 import slackIcon from "@/public/icons/slack.png";
+import TypeScriptIcon from "@/public/icons/typescript.png";
+import tailwind from "@/public/icons/tailwind-css.png";
 
 import lottieJson from "@/public/animation/scroll.json";
 import emailJson from "@/public/animation/mail.json";
@@ -105,6 +107,14 @@ export default function Home() {
               <p>JavaScript</p>
             </li>
             <li>
+              <Image src={TypeScriptIcon} alt="이미지" />
+              <p>Typescript</p>
+            </li>
+            <li>
+              <Image src={tailwind} alt="이미지" />
+              <p>Tailwindcss</p>
+            </li>
+            <li>
               <Image src={jq} alt="이미지" />
               <p>Jquery</p>
             </li>
@@ -117,16 +127,8 @@ export default function Home() {
               <p>Next.js</p>
             </li>
             <li>
-              <Image src={swiperIcon} alt="이미지" />
-              <p>Swiper</p>
-            </li>
-            <li>
               <Image src={lottieIcon} alt="이미지" />
               <p>Lottie</p>
-            </li>
-            <li>
-              <Image src={axiosIcon} alt="이미지" />
-              <p>Axios</p>
             </li>
             <li>
               <Image src={figmaIcon} alt="이미지" />
@@ -154,23 +156,23 @@ export default function Home() {
                   <p>2023.02 ~ 2024.08</p>
                 </div>
                 <ul>
-                  <li>- 보답 웹, 앱 메인,서브 페이지 프론트 개발</li>
-                  <li>- 보답 어드민 페이지 프론트 개발</li>
+                  <li>- 보답 웹, 앱 메인,서브 페이지 프론트 개발, 유지보수</li>
+                  <li>- 보답 어드민 페이지 프론트 개발, 유지보수</li>
                   <li>- Jquery를 사용한 레거시코드 Vanilla Js로 리팩토링</li>
                   <li>
                     - 디자이너, 기획자, 백엔드 개발자와 협업하여 웹, 앱 내
                     개선사항 수정
                   </li>
-                  <li>- REST API연동하여 보험 목록 호출 개발</li>
+                  <li>- 개발 요구사항 반영 및 Rest API 연동</li>
                   <li>- 웰그램 자사 홈페이지 유지보수</li>
                   <li>- 웰그램 자사 홈페이지 레거시 코드 React로 리팩토링</li>
                   <li>- 디자인시스템 적용</li>
                   <li>
                     <a href="https://bodab.ai/" target="_blank">
-                      🎈보답
+                      🎈 보답
                     </a>
                     <a href="https://www.welgram.com/" target="_blank">
-                      🎈웰그램
+                      🎈 웰그램
                     </a>
                   </li>
                 </ul>
@@ -244,6 +246,30 @@ export default function Home() {
                     <span>*비개발</span> CGV 매니저, 미소지기 2013.06 ~ 2021.05
                   </h4>
                 </div>
+              </div>
+            </li>
+          </ul>
+          <h3>PROJECT</h3>
+          <ul>
+            <li className={styles.careerWrap}>
+              <div>
+                <div>
+                  <h4>북마크 저장소</h4>
+                </div>
+                <ul>
+                  <li>
+                    - React, Typescript, Tailwindcss, firebase를 사용하여 북마크
+                    저장 서비스 구현
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://bookmark-project-delta.vercel.app/"
+                    >
+                      💌 링크
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
