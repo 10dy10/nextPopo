@@ -2,12 +2,13 @@
 
 import { sendEmail } from "../lib/action";
 import { useActionState } from "react";
+import styles from "../page.module.css";
 
 export default function EmailSend() {
   const [actionState, formAction] = useActionState(sendEmail, null);
 
   return (
-    <form action={formAction} className="sendForm">
+    <form action={formAction} className={styles.sendForm}>
       <div>
         <div>
           <label htmlFor="name">NAME</label>
