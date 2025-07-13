@@ -122,6 +122,9 @@
   gap: 1rem;
   font-size: 1.6rem;
 }
+.aboutWrap .aboutBox .aboutTxt ul a {
+  color: #000;
+}
 .imgBox {
   width: 20rem;
 }
@@ -182,6 +185,16 @@
   margin-top: 1rem;
   margin-right: 1rem;
   color: #000;
+  width: 8rem;
+  border: 1px solid #f0b1de;
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+.coverArea > .experienceWrap .careerWrap div li a:hover {
+  background-color: #f0b1de;
+  color: #fff;
 }
 .coverArea > .experienceWrap .careerWrap div li span {
   display: inline-block;
